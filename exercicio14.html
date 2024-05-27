@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exercicio 14</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script>
+        function mouseEmCima(imagem)
+    {
+        imagem.scr="figura1.jpg";
+    }
+    function mouseFora(imagem)
+    {
+        imagem.scr="figura2.jpg"
+    }
+    </script>
+</head>
+<body>
+    Passe o mouse sobre a imagem: <br><br>
+    <img scr="figura2.jpg" onclick="mouseEmCima(this)" width="300" height="300">
+    <br><br>
+     Agora padronize os tamanhos das imagens. <br><br>
+     Mude o evento para que as imagens sejam trocadas ao "clicar" com o mouse.
+     <!--
+        width="300" height="300" : dentro da tag img scr 
+        onclick="mousEmCima(this)"
+        onMouseOver="mouseEmCima(this)"
+     -->
+</body>
+</html>
